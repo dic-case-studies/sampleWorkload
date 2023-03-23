@@ -1,0 +1,14 @@
+{
+  "name" : "fft",
+  "base" : "fedora-base.json",
+  "overlay" : "overlay",
+  "host-init" : "host-init.sh",
+  "guest-init" : "guest-init.sh",
+  "jobs" : [
+    {
+      "name" : "bench-fft",
+      "outputs" : [ "/root/run_result.txt" ],
+      "run" : "runFft.sh"
+    }
+  ]
+}
